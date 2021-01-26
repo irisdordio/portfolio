@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'mondwestregular';
+    src: url('fonts/Mondwest-Regular.woff2') format('woff2'),
+         url('fonts/Mondwest-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neuemontreal';
+    src: url('fonts/neuemontreal-regular-webfont.woff2') format('woff2'),
+         url('fonts/neuemontreal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-size: 1.5vw;
+    line-height: 1.4em;
+}
+
+body {
+    font-family: 'neuemontreal';
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    min-height: calc(100vh - 5rem);
+}
+
+/*-------------*
+     header  
+*-------------*/
+header {
+    display: flex;
+    top: 0;  
+    margin: 2rem 1rem;
+}
+
+header .burger {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul .logo {
+    width: 20rem;
+    border: .25rem solid #957ad2;
+    border-radius: 3em;
+    padding: 1rem 1.5rem;
+    height: 5rem;
+    line-height: 3.8em;
+}
+
+header nav ul .button {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: .25rem solid #957ad2;
+    border-radius: 1em;
+    padding: 1rem 1.5rem;
+    height: 5rem;
+    line-height: .85em;
+}
+
+header nav ul li:hover {
+    background-color: #957ad2;
+}
+
+header nav ul .current-section {
+    background-color: #957ad2;
+}
+
+/*-------------------------------*
+     header for work section  
+*-------------------------------*/
+header nav .project-nav {
+    width: fit-content;
+}
+
+header nav .project-nav .arrow {
+    line-height: 1.35em;
+    margin: 0 2rem;
+    font-size: 4rem;
+}
+
+/*------------------------*
+    general tipography  
+*------------------------*/
+div.general-text {
+    font-size: 2.1rem;
+    line-height: 1em;
+    position: fixed; 
+    margin: 2rem 1rem;
+    bottom: 0; 
+    z-index: -1; 
+}
+
+span, a.bit-link {
+    font-family: 'mondwestregular';
+    color: #957ad2;
+    font-size: 2.4rem;
+}
+
+.bit {
+    color:#000;
+    font-size: 2.4rem;
+}
+
+a.bit-link:hover {
+    text-decoration: underline;
+}
+
+/*-------------*
+    projects  
+*-------------*/
+main.project .container .project-text {
+    font-size: 2.1rem;
+    line-height: 1em;
+    margin: 2rem 1rem;   
+    color: #957ad2;
+}
+
+main.project .container div img {  
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+main.project .container div iframe {
+    padding: 0 1rem;
+}
+
+/*------------------*
+    media queries  
+*------------------*/
+@media screen and (max-width: 1025px) {
+    :root {
+        font-size: 1.5vw; 
+    }
+
+    div.general-text {
+        font-size: 3.5rem;
+    }
+
+    main.project .container .project-text {
+        font-size: 3.5rem;
+        line-height: 4.1rem
+    }
+
+    span, span.bit, a.bit-link {
+        font-size: 4rem;
+    }
+
+    header nav .project-nav .arrow {
+        line-height: 1.35em;
+        margin: 0 2rem;
+    }
+}    
+
+@media screen and (max-width: 769px) {
+    :root{
+        font-size: 1.5vw;
+    }
+
+    div.general-text {
+        font-size: 3.5rem;
+        
+    }
+    main.project .container .project-text {
+        font-size: 3.5rem;
+        line-height: 3.8rem
+    }
+
+    span, span.bit, a.bit-link {
+        font-size: 4rem;
+    }
+
+    header nav .project-nav .arrow {
+        line-height: 1.3em;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    :root{
+        font-size: 4vw;
+
+    }
+
+    div.general-text {
+        font-size: 1.5rem;
+    }
+
+    main.project .container .project-text {
+        font-size: 1.5rem;
+        line-height: 1.1em
+        
+    }
+
+    span, span.bit, a.bit-link {
+        font-size: 1.65rem;
+    }
+
+    /*-------------------*
+        menu // burger  
+    *-------------------*/
+    header .burger {
+        display: block;
+    }
+
+    header .burger div {
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+        
+    }
+
+    header .burger .menu::before{
+        content: 'MENU';
+        position: relative;
+        font-size: 2rem;
+        border: .2rem solid #957ad2;
+        border-radius: 1em;
+        padding: .55rem 1rem;
+        z-index: 1;
+    } 
+
+    header .burger .work-2::before {
+        content: 'WORK';
+        font-size: 2rem;
+        border: .2rem solid #957ad2;
+        border-radius: 1em;
+        padding: .5rem 1rem;
+    }
+
+    ::after {
+        font-size: 2rem;
+        background-color: #957ad2;
+        border: .2rem solid #957ad2;
+        border-radius: 1em;
+        padding: .5rem 1rem;
+    }
+
+    /*~~~~ BURGER LOGO ~~~~*/
+    header .burger .iris-dordio {
+        background-color: #957ad2;
+        border: .2rem solid #957ad2;
+        width: 16rem;
+        border-radius: 2em;
+        padding: .5rem 1rem;
+        margin-top: -1.2rem;
+        height: 4rem;
+        line-height: 3.6em;
+    }
+
+    header .burger .work::after {
+        content: 'WORK';
+    }
+
+    header .burger .contact::after {
+        content: 'CONTACT';
+    }
+
+    header .burger .revamp::after {
+        content: 'REVAMP';
+    }
+
+    header .burger .indielisboa::after {
+        content: 'INDIELISBOA'
+    }
+
+    header .burger .rotura-rutura::after {
+        content: 'ROTURA RUTURA';
+        white-space: nowrap;
+    }
+
+    header .burger .cpf::after {
+        content: 'C.P.F.';
+    }
+
+    /*-------------------------*
+        navigation // burger  
+    *-------------------------*/
+    header nav {
+        background-color: #fff;
+        position: fixed;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        transition: right .5s;
+    }
+
+    header nav.active {
+        right: 0;
+        transition: right .5s;    
+    }
+
+    header nav ul {
+        position: fixed;
+        display: block; 
+        bottom: 0;
+        margin: 1rem 2rem;
+    }
+
+    header nav ul .logo {
+        width: 16rem;
+        height: 4.2rem;
+        border: .2rem solid #957ad2;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header nav ul .button {
+        font-size: 2rem;
+        height: 4rem;
+        line-height: 1.25em;
+        width: fit-content;
+        border: .2rem solid #957ad2;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+    }
+}
