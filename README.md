@@ -1,5 +1,12 @@
-Digital portfolio created Jun 16th 2020.
+ÍRIS DÓRDIO — DIGITAL DESIGNER
 
-Minor changes done Jan 26th 2021.
+Website showcasing selected academic project.
+<ol>
+  <li>Million Masters - 2021</li>
+  <li>Comité da Paz e da Felicidade - 2020</li>
+  <li>rotura rutura - 2019</li>
+  <li>IndieLisboa's identity rebranding proposal - 2019</li>
+</ol>
 
-Uploaded for showcase Fev 2.
+IG @irisdordio <br>
+dordioiris@gmail.com
