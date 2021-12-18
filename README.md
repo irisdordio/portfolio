@@ -1,6 +1,6 @@
 ÍRIS DÓRDIO — DIGITAL DESIGNER
 
-Website showcasing selected academic project.
+Website showcasing selected academic projects.
 <ol>
   <li>Million Masters - 2021</li>
   <li>Comité da Paz e da Felicidade - 2020</li>
