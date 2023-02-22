@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'mondwestregular';
     src: url('fonts/Mondwest-Regular.woff2') format('woff2'),
-         url('fonts/Mondwest-Regular.woff') format('woff');
+        url('fonts/Mondwest-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,7 +16,7 @@
 @font-face {
     font-family: 'neuemontreal';
     src: url('fonts/neuemontreal-regular-webfont.woff2') format('woff2'),
-         url('fonts/neuemontreal-regular-webfont.woff') format('woff');
+        url('fonts/neuemontreal-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +44,7 @@ main {
 *-------------*/
 header {
     display: flex;
-    top: 0;  
+    top: 0;
     margin: 2rem 1rem;
 }
 
@@ -104,20 +104,21 @@ header nav .project-nav .arrow {
 div.general-text {
     font-size: 2.1rem;
     line-height: 1em;
-    position: fixed; 
+    position: fixed;
     margin: 2rem 1rem;
-    bottom: 0; 
-    z-index: -1; 
+    bottom: 0;
+    z-index: -1;
 }
 
-span, a.bit-link {
+span,
+a.bit-link {
     font-family: 'mondwestregular';
     color: #957ad2;
     font-size: 2.4rem;
 }
 
 .bit {
-    color:#000;
+    color: #000;
     font-size: 2.4rem;
 }
 
@@ -131,11 +132,11 @@ a.bit-link:hover {
 main.project .container .project-text {
     font-size: 2.1rem;
     line-height: 1em;
-    margin: 2rem 1rem;   
+    margin: 2rem 1rem;
     color: #957ad2;
 }
 
-main.project .container div img {  
+main.project .container div img {
     width: 100%;
     height: auto;
     padding: 1rem;
@@ -150,7 +151,7 @@ main.project .container div iframe {
 *------------------*/
 @media screen and (max-width: 1025px) {
     :root {
-        font-size: 1.5vw; 
+        font-size: 1.5vw;
     }
 
     div.general-text {
@@ -162,7 +163,9 @@ main.project .container div iframe {
         line-height: 4.1rem
     }
 
-    span, span.bit, a.bit-link {
+    span,
+    span.bit,
+    a.bit-link {
         font-size: 4rem;
     }
 
@@ -170,23 +173,26 @@ main.project .container div iframe {
         line-height: 1.35em;
         margin: 0 2rem;
     }
-}    
+}
 
 @media screen and (max-width: 769px) {
-    :root{
+    :root {
         font-size: 1.5vw;
     }
 
     div.general-text {
         font-size: 3.5rem;
-        
+
     }
+
     main.project .container .project-text {
         font-size: 3.5rem;
         line-height: 3.8rem
     }
 
-    span, span.bit, a.bit-link {
+    span,
+    span.bit,
+    a.bit-link {
         font-size: 4rem;
     }
 
@@ -197,7 +203,7 @@ main.project .container div iframe {
 }
 
 @media screen and (max-width: 577px) {
-    :root{
+    :root {
         font-size: 4vw;
 
     }
@@ -209,10 +215,11 @@ main.project .container div iframe {
     main.project .container .project-text {
         font-size: 1.5rem;
         line-height: 1.1em
-        
     }
 
-    span, span.bit, a.bit-link {
+    span,
+    span.bit,
+    a.bit-link {
         font-size: 1.65rem;
     }
 
@@ -226,10 +233,10 @@ main.project .container div iframe {
     header .burger div {
         margin: 1rem 0;
         padding-bottom: 2rem;
-        
+
     }
 
-    header .burger .menu::before{
+    header .burger .menu::before {
         content: 'MENU';
         position: relative;
         font-size: 2rem;
@@ -237,7 +244,7 @@ main.project .container div iframe {
         border-radius: 1em;
         padding: .55rem 1rem;
         z-index: 1;
-    } 
+    }
 
     header .burger .work-2::before {
         content: 'WORK';
@@ -307,12 +314,12 @@ main.project .container div iframe {
 
     header nav.active {
         right: 0;
-        transition: right .5s;    
+        transition: right .5s;
     }
 
     header nav ul {
         position: fixed;
-        display: block; 
+        display: block;
         bottom: 0;
         margin: 1rem 2rem;
     }
