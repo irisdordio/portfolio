@@ -3,9 +3,9 @@
 Website showcasing selected projects.
 <ol>
   <li>Novas Novas Cartas Portuguesas — 2022</li>
-  <li>Million Masters - 2021</li>
-  <li>Comité da Paz e da Felicidade - 2020</li>
-  <li>rotura rutura - 2019</li>
+  <li>Worms, A Good Business Model - 2023</li>
+  <li>OOLOO - 2022</li>
+  <li>Burn Ghost - 2022</li>
 </ol>
 
 IG @irisdordio <br>
